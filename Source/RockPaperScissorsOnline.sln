@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissorsOnline.Server", "RockPaperScissorsOnline\Server\RockPaperScissorsOnline.Server.csproj", "{33A75653-6C5E-4371-9177-A1E368369C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissorsOnline.Client", "RockPaperScissorsOnline\Client\RockPaperScissorsOnline.Client.csproj", "{648C8966-A05E-4058-8C65-22D6ADFC289A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissorsOnline.Shared", "RockPaperScissorsOnline\Shared\RockPaperScissorsOnline.Shared.csproj", "{BA5ECBF3-4DEB-427B-A5CD-316FF32E3451}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33A75653-6C5E-4371-9177-A1E368369C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A75653-6C5E-4371-9177-A1E368369C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A75653-6C5E-4371-9177-A1E368369C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A75653-6C5E-4371-9177-A1E368369C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648C8966-A05E-4058-8C65-22D6ADFC289A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648C8966-A05E-4058-8C65-22D6ADFC289A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648C8966-A05E-4058-8C65-22D6ADFC289A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648C8966-A05E-4058-8C65-22D6ADFC289A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5ECBF3-4DEB-427B-A5CD-316FF32E3451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5ECBF3-4DEB-427B-A5CD-316FF32E3451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5ECBF3-4DEB-427B-A5CD-316FF32E3451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5ECBF3-4DEB-427B-A5CD-316FF32E3451}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E22F7C93-325E-4650-A897-13B90B5383EA}
+	EndGlobalSection
+EndGlobal
