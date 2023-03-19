@@ -1,0 +1,74 @@
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #4C4C4C;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-emoji {
+    font-size: 4rem;
+}
+
+.container .player-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5rem;
+}
+
+.card {
+    cursor: pointer;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+
+    transition: .25s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 50px lightgray;
+    transform: scale(1.05);
+}
+
+.card .weapon-emoji {
+    font-size: 2rem;
+}
+
+.card:active {
+    transform: scale(0.75);
+    box-shadow: 10px 10px 50px lime;
+}
+
+.card p {
+    font-weight: 300;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.container .computer-row {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.container .result-row {
+    text-align: center;
+}
+
+
+.player-choice {
+    color: green;
+}
+
+.computer-choice {
+    color: tomato;
+}

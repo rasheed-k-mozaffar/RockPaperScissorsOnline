@@ -3,7 +3,8 @@ main {
 }
 
 footer {
-    margin-top: 10rem;
+    position: absolute;
+    bottom: 0;
     background-color: #f2f2f2;
     color: #4C4C4C;
     font-size: 14px;

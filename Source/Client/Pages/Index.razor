@@ -1,4 +1,75 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
 
+
+<div class="container">
+    <h1>Pick Your Weapon</h1>
+
+    <div class="player-row">
+
+        <div class="card" @onclick=' ( () => CheckWinner("rock") )'>
+            <h3><span class="weapon-emoji">🪨</span><br> Rock</h3>
+            <p>Defeats the mighty scissors <br>Loses to the thin paper</p>
+        </div>
+
+        <div class="card" @onclick=' ( () => CheckWinner("paper") )'>
+            <h3><span class="weapon-emoji">🧻</span><br> Paper</h3>
+            <p>Defeats the dull rock <br>Loses to the sharp scissors</p>
+        </div>
+
+        <div class="card" @onclick=' ( () => CheckWinner("scissors") )'>
+            <h3><span class="weapon-emoji">✂️</span><br> Scissors</h3>
+            <p>Defeats the paper sheet <br>The rock breaks it</p>
+        </div>
+    </div>
+
+
+    <div class="result-row">
+        <h2>Your Drawn Weapon: <span class="player-choice">@userChoice</span></h2>
+        <h2>Computer's Choice: <span class="computer-choice">@computerChoiceAsString</span></h2>
+        <h1>@result</h1>
+    </div>
+
+</div>
+
+
+
+@code {
+    //This string will be used to store the value that the player picks
+    string userChoice;
+    string computerChoiceAsString;
+    string result;
+    string[] choices = { "rock", "paper", "scissors" };
+
+    Random random = new Random();
+
+
+
+
+    string[] results = { "✍️ Draw ✍️", "🧠 You WIN 🧠", "⚠️ The Computer WINS ⚠️" };
+
+    //This method will check who wins , the user or the computer based on the game rules.
+    public void CheckWinner(string value)
+    {
+        userChoice = value;
+
+        byte computerChoice = (byte)random.Next(choices.Length);
+
+        computerChoiceAsString = choices[computerChoice];
+
+        if (userChoice == choices[computerChoice])
+        {
+            result = results[0];
+        }
+        else if (userChoice == "rock" && choices[computerChoice] == "scissors" || userChoice == "paper"
+        && choices[computerChoice] == "rock" || userChoice == "scissors" && choices[computerChoice] == "paper")
+        {
+            result = results[1];
+        }
+        else
+        {
+            result = results[2];
+        }
+
+    }
+}
