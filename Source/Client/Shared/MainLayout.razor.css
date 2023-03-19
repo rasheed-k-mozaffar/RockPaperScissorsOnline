@@ -1,0 +1,14 @@
+main {
+    padding: 0px 10%;
+}
+
+footer {
+    margin-top: 10rem;
+    background-color: #f2f2f2;
+    color: #4C4C4C;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
